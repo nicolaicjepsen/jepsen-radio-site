@@ -1,0 +1,29 @@
+/* Jepsen Radio's small public site: privacy policy, support, landing. No web fonts, no scripts,
+   nothing loaded from elsewhere, so the pages themselves collect nothing. */
+:root {
+  --paper: #f8dba8;
+  --ink: #3b1f17;
+  --walnut: #702e14;
+  --rule: #c09867;
+  --link: #8a3815;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #271410; --ink: #f8dba8; --walnut: #f0b664; --rule: #6c3f2b; --link: #f0b664; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+}
+main { max-width: 680px; margin: 0 auto; padding: 40px 16px 64px; }
+header { border-bottom: 2px solid var(--rule); margin-bottom: 28px; padding-bottom: 12px; }
+header a { color: var(--walnut); text-decoration: none; font-weight: 700; letter-spacing: 0.2em; }
+nav { margin-top: 6px; font-size: 15px; }
+nav a { color: var(--link); margin-right: 16px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 20px; margin: 32px 0 8px; color: var(--walnut); }
+a { color: var(--link); }
+.muted { opacity: 0.75; font-size: 15px; }
+footer { margin-top: 48px; border-top: 1px solid var(--rule); padding-top: 12px; font-size: 14px; opacity: 0.75; }
